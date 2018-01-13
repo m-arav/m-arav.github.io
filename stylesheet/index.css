@@ -1,0 +1,26 @@
+.center-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    margin-left: -50px;
+    margin-top: -50px;
+}
+.geralt {
+    width: 100px;
+    height: 100px;
+    background-image: url("../sprites/geralt-1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    animation-name: geralt-sword-swing;
+    animation-duration: .82s;
+    animation-iteration-count: infinite;
+}
+@keyframes geralt-sword-swing {
+    0%   {background-image: url("../sprites/geralt-1.png");}
+    20%  {background-image: url("../sprites/geralt-2.png");}
+    40%  {background-image: url("../sprites/geralt-3.png");}
+    60%  {background-image: url("../sprites/geralt-4.png");}
+    80%  {background-image: url("../sprites/geralt-5.png");}
+    100% {background-image: url("../sprites/geralt-6.png");}
+}
